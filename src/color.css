@@ -1,0 +1,60 @@
+:root{
+    color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: light){
+    body{
+        --text-color: #121B21;
+        --content-color: #DDE6ED;
+        --background-color: #f0f9ff;
+        --primary-color: #27374E;
+        --secondary-color: #9CB2BF;
+        --accent: #526E84;
+    }
+}
+
+@media (prefers-color-scheme: dark){
+    body{
+        --text-color: #DDE6ED;
+        --content-color: #DDE6ED;
+        --background-color: #121B21;
+        --primary-color: #1d3444;
+        --secondary-color: #405663;
+        --accent: #7B97AD;
+    }
+}
+
+.text-color{
+    color: var(--text-color) !important;
+}
+.primary-bg.text-color, .text-color.primary-bg, .primary-bg .text-color{
+    color: var(--content-color) !important;
+}
+.text-color:hover{
+    color: var(--accent) !important;
+}
+.dropdown-item.text-color:hover{
+    /* here you would put other bootstrap or other componenets 
+    to change custop bg color hover effect*/
+    color: var(--text-color) !important;
+    background-color: var(--secondary-color);
+}
+.primary-color{
+    color: var(--primary-color)!important;
+}
+.secondary-color{
+    color: var(--secondary-color) !important;
+}
+.accent{
+    color: var(--accent) !important;
+}
+
+.primary-bg{
+    background-color: var(--primary-color) !important;
+}
+.secondary-bg{
+    background-color: var(--secondary-color) !important;
+}
+.accent-bg{
+    background-color: var(--accent) !important;
+}
